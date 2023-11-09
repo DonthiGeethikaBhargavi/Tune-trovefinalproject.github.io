@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHAKTI SONGS</title>
+    <link rel="icon" href="image 2.jpg">
+    <style>
+        * {
+        font-family: Lato ,sans-serif;
+        cursor: pointer; 
+       }
+      body {
+        border: 3px ridge black;
+        border-radius: 10px;
+        height: 800px;
+        width: 98%;
+        box-shadow: 0px 0px 20px grey;
+        animation: ChangeBorderColor;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: relative; 
+        background-color: black;  
+      }
+      @keyframes ChangeBorderColor {
+            0% { border-color:#F875AA; }
+            25% { border-color: #004300; } 
+            50% { border-color: green; }
+            75% { border-color: d200d4; }
+            100% { border-color: #00ccff; }
+      }
+      .back-video {
+        position:absolute;
+        z-index: -1;
+        height: 800px;
+        width:100%;
+        object-fit: cover;
+      }
+    .OM {
+    color: red;
+    font-size: 2em;
+  }
+  header {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 2em;
+    transition: transform 0.5s;
+  }
+  header :hover {
+    transform: skew(30deg);
+  }
+  .back-video {
+        position:absolute;
+        z-index: -1;
+        height: 100%;
+        width:100%;
+        object-fit: cover;
+      }
+      img {
+       border: 1px solid #ddd;
+       border-radius: 4px;
+       padding: 5px;
+      animation: ChangeBoxBorderColor;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      box-shadow: 0px 0px 20px grey;
+     position: relative;
+     transition: transform 0.5s;
+  }
+    @keyframes ChangeBoxBorderColor {
+      10% { border-color:#F875AA; }
+      25% { border-color: #004300; }
+      50% { border-color: green; }
+      75% { border-color: #004300; }
+      99% { border-color: #00ccff; }
+       40% {
+               transform: perspective(200px) rotateX(360deg);
+          }
+      100% {
+        transform: perspective(200px) rotateZ(180deg);
+       }
+   }
+   img:hover {
+     box-shadow: 0 0 20px  rgba(0, 140, 186, 0.5);
+     background-color: #ECE3CE;
+    transform: scale(1.1);
+   }
+   .nav {
+    display: flex;
+    gap:10px;
+    margin-left:100px;
+    margin-top: 60px;       
+   }
+   </style>
+</head>
+<body>
+    <div class="video">
+        <video  autoplay loop muted plays-inline class="back-video">
+          <source src="bhaktibackgroundvideo.mp4" type="video/mp4">
+        </video>
+      </div>
+    <header> 
+        <marquee behavior="alternate" direction="left">
+        <span style="color:paleturquoise;">B</span>
+         <span style="color:darkmagenta;">H</span>
+        <span style="color:blue;">A</span>
+        <span style="color:green;">T</span>
+        <span style="color:yellow;">I</span>
+         <span style="color:orange;">S</span>
+        <span style="color:red;">O</span>
+         <span style="color:darkcyan;">N</span>
+        <span style="color:palevioletred;">G</span>
+         <span style="color:paleturquoise;">S</span>
+         <span class="OM">&#2384;</span>&#127926;</marquee>
+    </header>
+  <nav>
+     <div class="nav">
+       <a href="TeluguBhaktisongs.html"><img src="telugubhakti.png" alt="" height="400px" width="400px"></a>
+       <a href="HindiBhaktiSongs.html"><img src="hindi bhakti songs logo.png" alt="" height="400px" width="400px"></a>
+       <a href="Allmixbhaktisongs.html"><img src="All mix bhakti logo.png" alt="" height="400px" width="400px"></a>
+     </div> 
+  </nav>   
+</body>
+</html>

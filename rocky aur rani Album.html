@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCKY AUR RANI ALBUM</title>
+    <link rel="icon" href="image 2.jpg">
+    <style>
+         * {
+            text-decoration:none;
+            color: #73BBC9;
+            font-family: Lato, sans-serif;
+            cursor: pointer;     
+        }
+        body {
+        border: 3px ridge black;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px grey;
+        animation: ChangeBorderColor;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: relative; 
+        background-color: black;
+      }
+      @keyframes ChangeBorderColor {
+            0% { border-color:#F875AA; }
+            25% { border-color: #004300; } 
+            50% { border-color: green; }
+            75% { border-color: d400d4; }
+            100% { border-color: #00ccff; }
+      }
+      header {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 2em;
+      }
+        img {
+       border: 1px solid #ddd;
+       border-radius: 4px;
+       padding: 5px;
+      animation: ChangeBoxBorderColor;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      box-shadow: 0px 0px 20px grey;
+     position: relative;
+     transition: transform 0.5s;
+  }
+    @keyframes ChangeBoxBorderColor {
+      10% { border-color:#F875AA; }
+      25% { border-color: #004300; }
+      50% { border-color: green; }
+      75% { border-color: #004300; }
+      99% { border-color: #00ccff; }
+       40% {
+               transform: perspective(400px) rotateX(360deg);
+          }
+      100% {
+        transform: perspective(400px) rotateZ(180deg);
+       }
+   }
+   img:hover {
+     box-shadow: 0 0 20px  rgba(0, 140, 186, 0.5);
+     background-color: #ECE3CE;
+    transform: scale(1.1);
+   }
+   .back-video {
+        position:absolute;
+        z-index: -1;
+        height: 100%;
+        width:100%;
+        object-fit: cover;
+      }
+    .red-heart {
+    color: red;
+    font-size: 2em;
+  }
+  header,pre {
+    transition: transform 0.5s;
+  }
+  header:hover {
+    transform: skew(30deg);
+  }
+  pre:hover{
+    transform: skew(10deg);
+  } 
+  audio {
+    background-color: #00ccff;
+    border-radius: 50px;
+    border: 2px ridge black;
+  }
+  section {
+    text-align: center;
+  }
+   </style>
+</head>
+<body>
+    <div class="video">
+        <video  autoplay loop muted plays-inline class="back-video">
+          <source src="melodymusicbackground.mp4" type="video/mp4">
+        </video>
+      </div>
+      <header>
+      <marquee behavior="alternate" direction="left">
+        <span style="color:paleturquoise;">R</span>
+         <span style="color:darkmagenta;">O</span>
+        <span style="color:blue;">C</span>
+        <span style="color:green;">K</span>
+        <span style="color:yellow;">Y</span>
+        <span style="color:black;"> -</span>
+        <span style="color:palevioletred;">A</span>
+         <span style="color:paleturquoise;">U</span>
+         <span style="color:crimson;">R</span>
+         <span style="color:black;">-</span>
+        <span style="color:palevioletred;">R</span>
+        <span style="color:paleturquoise;">A</span>
+        <span style="color:crimson;">N</span>
+        <span style="color:purple;">I</span>
+        <span style="color:black;">-</span>
+        <span style="color:green;">K</span>
+        <span style="color:yellow;">I</span>
+        <span style="color:blue;">I</span>
+        <span style="color:black;">-</span>
+        <span style="color:green;">P</span>
+        <span style="color:yellow;">R</span>
+        <span style="color:palevioletred;">E</span>
+         <span style="color:paleturquoise;">M</span>
+         <span style="color:black;">-</span>
+         <span style="color:paleturquoise;">K</span>
+         <span style="color:darkmagenta;">H</span>
+        <span style="color:blue;">A</span>
+        <span style="color:green;">A</span>
+        <span style="color:yellow;">N</span>
+         <span style="color:orange;">I</span>
+         <span style="color:orange;">(</span>
+        <span style="color:red;">H</span>
+         <span style="color:darkcyan;">I</span>
+        <span style="color:palevioletred;">N</span>
+         <span style="color:paleturquoise;">D</span>
+         <span style="color:crimson;">I</span>
+         <span style="color:purple;">)</span>
+         <span class="music">&#65039&#127926;</span></marquee>
+    </header>
+    <section>
+        <img src="rocky aur rani poster.jpg" alt="" height="400px" width="400px"><br>
+        <pre>       
+            1. Tum Kya Mile <br>
+            <audio  id="audio 1" type ="audio" src="Tum Kya Mile Rocky Aur Rani Kii Prem Kahaani 128 Kbps.mp3"controls playsinline onended="document.getElementById('audio 2').play()"></audio><br>
+            Singers:Arijit Singh,Shreya Ghoshal <br>
+         2. What Jhumka? <br>
+         <audio id="audio 2" type ="audio" src="What Jhumka Rocky Aur Rani Kii Prem Kahaani 128 Kbps.mp3"controls playsinline onended="document.getElementById('audio 3').play()"></audio><br>
+            Singer:Arijit Singh,Jonita Gandhi,Ranveer Singh <br>
+         3. Heart Throb <br>
+         <audio id="audio 3" type ="audio" src="Heart Throb_320(Ghantalele.com).mp3"controls playsinline onended="document.getElementById('audio 4').play()" ></audio><br>
+            Singer:Dev Negi <br>
+         4. Dindora Bhaje Re <br>
+         <audio id="audio 4" type ="audio" src="Dhindhora Baje Re Rocky Aur Rani Kii Prem Kahaani 128 Kbps.mp3"controls playsinline onended="document.getElementById('audio 1').play()"></audio><br>
+              Singers: Darshan Raval,Bhoomi Trivedi <br>                                                                                                                                                                                                      
+    </pre> 
+</section>                                                                                                
+</body>
+</html>

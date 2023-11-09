@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HINDI ALBUM</title>
+    <link rel="icon" href="image 2.jpg">
+    <style>
+        * {
+            text-decoration:none;
+            color: #73BBC9;
+            font-family: Lato, sans-serif;
+            cursor: pointer; 
+        }
+        body {
+        border: 3px ridge black;
+        height:800px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px grey;
+        animation: ChangeBorderColor;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: relative; 
+        background-color: black;
+      }
+      @keyframes ChangeBorderColor {
+            0% { border-color:#F875AA; }
+            25% { border-color: #004300; } 
+            50% { border-color: green; }
+            75% { border-color: d400d4; }
+            100% { border-color: #00ccff; }
+      }
+      header {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 2em;
+      }
+        img,#video1 {
+       border: 1px solid #ddd;
+       border-radius: 4px;
+       padding: 5px;
+      animation: ChangeBoxBorderColor;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      box-shadow: 0px 0px 20px grey;
+     position: relative;
+     transition: transform 0.5s;
+  }
+    @keyframes ChangeBoxBorderColor {
+      10% { border-color:#F875AA; }
+      25% { border-color: #004300; }
+      50% { border-color: green; }
+      75% { border-color: #004300; }
+      99% { border-color: #00ccff; }
+       40% {
+               transform: perspective(400px) rotateX(360deg);
+          }
+      100% {
+        transform: perspective(400px) rotateZ(180deg);
+       }
+   }
+   img:hover,#video1:hover {
+     box-shadow: 0 0 20px  rgba(0, 140, 186, 0.5);
+     background-color: #ECE3CE;
+    transform: scale(1.1);
+   }
+   .back-video {
+        position:absolute;
+        z-index: -1;
+        height: 100%;
+        width:100%;
+        object-fit: cover;
+      }
+      .musicsymbols {
+    color: black;
+    font-size: 2em;
+  }
+
+  nav {
+    margin-left: 50px;
+   
+  }
+  .nav2 {
+    margin-left: 500px;
+    margin-top: -300px;
+  }
+  #video1 {
+      object-fit:fill
+  }
+  .nav3 {
+    margin-left: 900px;
+    margin-top: -310px;
+    text-align: center;
+  }
+  .nav4 {
+    margin-top: 100px;
+  }
+.nav5 {
+    margin-left:500px;
+    margin-top:-300px;
+}
+.nav6 {
+    margin-left: 900px;
+    margin-top:-300px ;
+}
+.nav7 {
+    margin-left: 1230px;
+    margin-top: -310px;
+}
+  
+
+ 
+   </style>
+</head>
+<body>
+    <div class="video">
+        <video  autoplay loop muted plays-inline class="back-video">
+          <source src="backgroundvideo.mp4" type="video/mp4">
+        </video>
+      </div>
+      <nav>
+        <div class="nav1">
+        <h1>Hindi - Trending Songs &#127926;</h1><br>
+        <a href="Hindi.html"><img src="trending hindi music.png" alt="" height="200px" width="200px"></a>
+    </div>
+    <div class="nav2">
+        <h1>Hindi-New Music Arrivals &#127926;</h1><br>
+        <a href="Hindi.html"><video id ="video1" src="new hindi music arrival.mp4"   height="200px" width="200px" controls autoplay muted loop  playsinline ></video></a>
+    </div>  
+    <div class="nav3">
+    <h1>Hindi-Albums &#127926;</h1><br>
+    <a href="rocky aur rani Album.html"><img src="rocky aur rani poster.jpg" alt="" height="200px" width="200px"></a>
+     <a href="Jawan Album.html"><img src="jawan poster.png" alt="" height="200px" width = "200px"></a>
+    </div>
+    <div class="nav4">
+    <h1>Hindi-Melody &#9829&#65039&#127926;</h1><br>
+    <a href="HindiMelody.html"><img src="hindi melody songs logo.png" alt="" height="200px" width="200px"></a>
+    </div>
+    <div class="nav5">
+    <h1>Hindi-Top Songs &#127926;</h1><br>
+    <a href="Hindi.html"><img src="top hindi songs poster.png" alt="" height="200px" width="200px"></a>
+    </div>
+    <div class="nav6">
+    <h1>Hindi Songs-Mix &#127926;</h1><br>
+    <a href="Hindi.html"><img src="hindisongsmixposter.png" height="200px" width="200px" ></a>
+    </div>
+    <div class="nav7">
+    <h1>Hindi-Bhakti songs &#2384;&#127926;</h1><br>
+    <a href="HindiBhaktiSongs.html"><img src="hindi bhakti songs logo.png" alt="" height="200px" width="200px"></a>
+</div>
+</nav>
+</body>
+</html>

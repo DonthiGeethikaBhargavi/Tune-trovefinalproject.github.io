@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <link rel="icon" href="image 2.jpg">
+    <style>
+        * {
+            text-decoration:none;
+            color: #73BBC9;
+            font-family: Lato, sans-serif;    
+        }
+        body,section {
+        border: 3px ridge black;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px grey;
+        animation: ChangeBorderColor;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: relative; 
+        background-color: black;
+        cursor:pointer;
+      }
+      @keyframes ChangeBorderColor {
+            0% { border-color:#F875AA; }
+            25% { border-color: #004400; } 
+            50% { border-color: green; }
+            75% { border-color: d400d4; }
+            100% { border-color: #00ccff; }
+      }
+      header {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 2em;
+      }
+      section{
+       margin-left: 32%;
+       margin-right: 100px;
+       margin-bottom: 500px;
+       padding-left: 100px;
+       padding-top: 40px;
+       height: 550px;
+       width:500px;
+      }
+       p {
+        display: none;
+       }
+       input:hover + p{
+        display: inline;
+        font-family: monospace;
+        background-color: red;
+       }
+       input:focous{
+        font-size: 5em;
+        font-weight: bold;
+       }
+       pre {
+        display: none;
+       }
+       input[type="email"]:focus:valid ~ pre.valid {
+          display: inline;
+       }
+       input[type="email"]:focus:invalid ~ pre.invalid {
+          display: inline;
+          color: red;         
+       }
+       input[type="radio"]:checked{
+        width:20px;
+        height:20px;
+       }
+       input[type="radio"]:checked + label{
+         color: green;
+       }
+       input[type="submit"]{
+        border: 2px ridge black;
+        border-radius: 50px;
+        color: purple;
+        width: 150px;
+        background-color: #00ccff;
+        font-weight: bolder;
+       }
+       input{
+        background-color:white;
+       } 
+       .nav {
+        display:inline;
+       float: right;
+       margin-top: -200px;
+       margin-right: 50px;
+       }   
+       a {
+        border: 3px solid white;
+        border-radius: 40px;
+        padding-right: 5px; 
+        font-weight: bolder;
+        color: purple;
+        background-color: #00ccff;
+       }
+       a:hover {
+         background-color: green;
+       }
+   </style>
+</head>
+<body>
+<form action="Tune-Trove.html">
+ <header>
+        <legend><h3>WELCOME TO TUNE TROVE</h3></legend>
+        <h1>SIGN UP</h1>
+</header>
+<nav>
+  <pre class="nav">
+    Already have an account?  <a href="login.html"> Log in</a> 
+  </pre>
+</nav>
+<section>
+        <label for="">NAME</label><br><br>
+        <input type="text" name="name" id="name" required pattern="[a-z A-Z]{3,20}" size="40" placeholder="&#128100;">
+        <p>Enter your Name</p>
+        <br><br>
+       <label for="">EMAIL</label><br><br> 
+       <input type="email" name="email" id="email" required size="40" placeholder="&#128231;" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+       <p>Enter your Email</p>
+       <pre class="valid">&#9989;</pre>
+       <pre class="invalid">&#9888;</pre>
+        <br><br>
+        <label for="">PHONE NUMBER</label><br><br>
+        <input type="text" name="mobile" id="mobile" placeholder="&#128222;" size="40px">
+        <p>Enter your phone Number</p>
+        <br><br>
+        <label for="">PASSWORD</label><br><br>
+        <input type="password" id="password" name="password" required  size="40" placeholder="&#128274;" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+        <p>Enter your Password</p>
+        <br><br>
+        <label for="">CONFIRM PASSWORD</label><br><br>
+        <input type="password" Id="Re-enterPassword" name="Re-enterPassword" required size="40" placeholder="&#128274;"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+        <p>Confirm your password</p>
+        <br><br>
+        <label for="">GENDER</label>
+        <input type="radio" name="gender" value="M" >
+        <label for="">MALE</label>
+        <input type="radio" name="gender" value="F">
+        <label for="">FEMALE</label>
+        <input type="radio" name="gender" value="O">
+        <label for="">OTHER</label><br><br>
+        <label for="">DOB</label>
+        <input type="date" name:DOB id="dob" required>
+        <p>Enter your Date of Birth</p>
+        <br><br>
+        <label for="">AGE</label>
+        <input type="number" name="age" id="age" max="100" size="40">
+        <p>Enter your Age</p>
+        <br><br>
+        <input type="submit" name="submit" id="submit">               
+</section>
+</form> 
+</body>
+</html>

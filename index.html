@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="icon" href="image 2.jpg"> 
+    <style>
+      body {
+        border: 3px ridge black;
+        border-radius: 10px;
+        height: 800px;
+        width: 98%;
+        box-shadow: 0px 0px 20px grey;
+        animation: ChangeBorderColor;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        position: relative; 
+        background-color: black;
+      }
+      @keyframes ChangeBorderColor {
+            0% { border-color:#F875AA; }
+            25% { border-color: #004300; } 
+            50% { border-color: green; }
+            75% { border-color: d400d4; }
+            100% { border-color: #00ccff; }
+      }
+      .back-video {
+        position:absolute;
+        z-index: -1;
+        height: 800px;
+        width:100%;
+        object-fit: cover;
+      }
+      * {
+        text-decoration:none;
+        color: #73BBC9;
+        font-family: Lato ,sans-serif;
+        cursor: pointer;
+    }
+      .header {
+        display:flex;
+        gap: 30px;
+        padding-left: 40px;
+        padding-top: 20px;
+        padding-bottom: 50px; 
+
+      }
+    #two,#three,#five,#six,#seven {
+     padding-top: 40px; 
+     margin-top: 20px;
+    }
+    #one {
+     margin-top: 30px;
+    }
+    #three:hover {
+      background-color: azure;
+      width: 60px; 
+      height: 60px;
+      padding-top: 20px;
+      text-align: center;
+     }
+     #four {
+    transition: transform 0.5s;
+  }
+
+  #four:hover {
+    transform: translate(50px, 50px)
+  }
+   #four input[type="text"]  {
+    margin-top:40px ;
+    padding-top: 40px; 
+    border-radius: 50px;
+    padding-bottom:10px;
+    padding-top: 20px;
+    bottom: 20px;
+  }
+  #five:hover {
+      background-color: azure;
+      padding-top: 20px;
+     }
+  #six :hover {
+      background-color: azure;
+     }
+   #seven :hover {
+       background-color: azure;
+     }
+   input[type="text"]::placeholder {
+             text-align: center;
+     }
+     #eleven {
+      object-fit:fill
+     }
+   .section {
+    display: flex;
+    gap: 30px;
+    padding-top: 50px;
+    border-radius: 50px;
+    margin-left: 40px;
+    }
+   img,#eleven {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    animation: ChangeBoxBorderColor;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    box-shadow: 0px 0px 20px grey;
+    position: relative;
+   transition: transform 0.5s;
+  }
+    @keyframes ChangeBoxBorderColor {
+      10% { border-color:#F875AA; }
+      25% { border-color: #004300; }
+      50% { border-color: green; }
+      75% { border-color: #004300; }
+      99% { border-color: #00ccff; }
+       0% {
+               transform: perspective(400px) rotateY(0);
+          }
+      100% {
+        transform: perspective(400px) rotateY(180deg);
+       }
+   }
+   img:hover,video:hover {
+     box-shadow: 0 0 20px  rgba(0, 140, 186, 0.5);
+     background-color: #ECE3CE;
+    transform: scale(1.5);
+   } 
+</style>
+<body>
+  <div class="video">
+    <video  autoplay loop muted plays-inline class="back-video">
+      <source src="backgroundvideo.mp4" type="video/mp4">
+    </video>
+  </div>
+  <header class="header">
+    <div id="one">
+      <a href="index.html"> <img src="image 2.jpg" alt="no image found"height= "90px" width="100px" ></a>
+    </div >
+    <div id="two">
+      <a href="index.html"> <abbr title="Tune Trove serves as a platform for users to discover an extensive collection of musical compositions across diverse genres, catering to various preferences and moods.">TUNE TROVE</abbr></a>
+    </div>
+    <div id="three">
+      <a href="index.html"> Home</a>
+    </div>
+    <div id="four">
+      <input type="text"  class="translate" placeholder=" &#x1F50E Search"   width="1000px" size="105">
+    </div>
+    <div id="five">
+      <label for="">Music Languages</label>
+      <select name="Music" id="Music">
+        <a href="index.html"><option value="None">None</option></a>
+        <option value="Telugu"><a href="TeluguAlbum.html">Telugu</a></option>
+        <a href="HindiAlbum.html"><option value="Hindi">Hindi</option></a> 
+        <a href=""><option value="English">English</option></a>
+     </select>
+    </div>
+    <div id="six">
+      <a href="login.html"> <abbr title="Log in">Log in </abbr></a>
+    </div>
+    <div id="seven">
+      <a href="Sign Up.html"><abbr title="Sign in">Sign Up</abbr></a></label> <br>
+    </div>
+  </header>
+<section  class="section">
+  <div>
+<a href="NewReleases.html"> <img id="eight" src="new release crop image.jpg" alt="No image found" height="300px" width="150px" class="image"></a>
+  </div>
+<a href="Trending Songs.html"> <img  id = "nine" src="trending crop image.jpg" alt="No image found" height="300px" width="150px"></a>
+</div>
+<div>
+<a href="TeluguAlbum.html"><img id="ten" src="telugu songs crop image.jpg" alt="No image found" height="300px" width="150px"></a>
+</div>
+<div>
+<a href="HindiAlbum.html"> <video id ="eleven" src="new hindi music arrival.mp4"   height="300px" width="150px" controls autoplay muted loop  playsinline ></video></a>
+</div>
+<div>
+ <a href="English.html"> <img id = "twelve"src="english crop image.jpg" alt="No image found" height="300px" width="150px"></a>
+</div>
+<div>
+<a href="MelodyMusic.html"> <img  id = "thirteen"src="melody croped image.jpg" alt="No image found" height="300px" width="150px"></a>
+</div>
+<div>
+<a href="Top10Songs.html"> <img  id = "fourteen"src="top10 crop image.jpg" alt="No image found" height="300px" width="150px"></a>
+</div>
+<div>
+<a href="Bhakti.html"> <img  id = "fifteen" src="bhakti image crop.jpg" alt="No image found" height="300px" width="150px"></a>
+</div>
+</section>
+</body>
+</html>

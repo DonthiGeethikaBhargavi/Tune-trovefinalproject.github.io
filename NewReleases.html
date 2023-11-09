@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewReleases</title>
+    <link rel="icon" href="image 2.jpg">
+    <style>    
+    * {
+            text-decoration:none;
+            color: #73BBC9;
+            font-family: Lato, sans-serif;
+            cursor: pointer; 
+        }
+        body {
+        border: 3px ridge black;
+        height: 800px;
+        width: 98%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px grey;
+        animation: ChangeBorderColor;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: relative; 
+        background-color: black;
+      }
+      @keyframes ChangeBorderColor {
+            0% { border-color:#F875AA; }
+            25% { border-color: #004300; } 
+            50% { border-color: green; }
+            75% { border-color: d400d4; }
+            100% { border-color: #00ccff; }
+      }
+      header {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 2em;
+      }
+        img {
+       border: 1px solid #ddd;
+       border-radius: 4px;
+       padding: 5px;
+      animation: ChangeBoxBorderColor;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      box-shadow: 0px 0px 10px grey;
+     position: relative;
+     transition: transform 0.5s;
+  }
+    @keyframes ChangeBoxBorderColor {
+      10% { border-color:#F875AA; }
+      25% { border-color: #004300; }
+      50% { border-color: green; }
+      75% { border-color: #004300; }
+      99% { border-color: #00ccff; }
+       40% {
+               transform: perspective(400px) rotateX(360deg);
+          }
+      100% {
+        transform: perspective(400px) rotateZ(180deg);
+       }
+   }
+   img:hover {
+     box-shadow: 0 0 20px  rgba(0, 140, 186, 0.5);
+     background-color: #ECE3CE;
+    transform: scale(1.1);
+   }
+   .back-video {
+        position:absolute;
+        z-index: -1;
+        height: 100%;
+        width:100%;
+        object-fit: cover;
+      }
+    .music {
+    font-size: 2em;
+  }
+  header {
+    transition: transform 0.5s;
+  }
+  header :hover {
+    transform: skew(30deg);
+  }
+  .nav {
+    display: flex;
+    gap:60px;
+    margin-top: 60px; 
+   margin-left: 500px;     
+   }
+   #nav3 {
+     margin-top:350px;
+     margin-left: -740px;
+   }
+   #nav4 {
+    margin-top: 350px;
+    margin-left: -430px;
+   }
+</style>
+</head>
+<body>
+    <div class="video">
+        <video  autoplay loop muted plays-inline class="back-video">
+          <source src="melodymusicbackground.mp4" type="video/mp4">
+        </video>
+      </div>
+      <header> 
+          <marquee behavior="alternate" direction="left">
+          <span style="color:paleturquoise;">N</span>
+           <span style="color:darkmagenta;">E</span>
+          <span style="color:blue;">W</span>
+          <span style="color:green;">R</span>
+          <span style="color:yellow;">E</span>
+           <span style="color:orange;">L</span>
+          <span style="color:red;">E</span>
+           <span style="color:darkcyan;">A</span>
+          <span style="color:palevioletred;">S</span>
+           <span style="color:paleturquoise;">E</span>
+           <span style="color:crimson;">S</span>
+           <span class="Music">&#65039&#127926;</span></marquee>
+      </header>
+   <nav>
+    <div class="nav">
+        <a href="Telugu.html"><img id= "nav1" src="tollywood new releases poster.png" alt="No image found" height="300px" width="300px"></a>
+        <a href="Hindi.html"><img  id= "nav2" src="bollywood new releases poster.png" alt="No image found" height="300px" width="300px"></a>
+         <a href="English.html"><img id= "nav3" src="hollywood new releases.png" alt="No image found" height="300px" width="300px"></a>
+         <a href="NewReleasesMix.html"><img id= "nav4" src="new releases mix poster.png" alt="No image found" height="300px" width="300px" ></a>
+    </div>
+   </nav>
+</body>
+</html>
